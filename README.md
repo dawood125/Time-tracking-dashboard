@@ -1,6 +1,6 @@
 # Frontend Mentor - Time Tracking Dashboard
 
-![Design preview for the Time tracking dashboard coding challenge](./preview.jpg)
+
 
 ## 🚀 Overview
 
@@ -9,7 +9,7 @@ This is my solution to the [Time Tracking Dashboard challenge](https://www.front
 ## 🖥️ Live Demo
 
 - **Live Site:** [Add your live site URL here]
-- **Solution:** [Add your solution URL here]
+- **Solution:** https://github.com/dawood125/Time-tracking-dashboard
 
 ## 📸 Screenshot
 
