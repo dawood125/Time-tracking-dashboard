@@ -8,7 +8,7 @@ This is my solution to the [Time Tracking Dashboard challenge](https://www.front
 
 ## 🖥️ Live Demo
 
-- **Live Site:** [Add your live site URL here]
+- **Live Site:** https://time-tracking-dashboard-xi-rosy.vercel.app/
 - **Solution:** https://github.com/dawood125/Time-tracking-dashboard
 
 ## 📸 Screenshot
