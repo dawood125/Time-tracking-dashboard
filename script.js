@@ -3,18 +3,16 @@ fetch("data.json")
   .then((data) => {
     const buttons = document.querySelectorAll(".time-filters a");
 
+     const defaultBtn = buttons[1];
+    const defaultFilter = defaultBtn.textContent.trim().toLowerCase();
+    updateUI(data, defaultFilter);
+
     buttons.forEach((button) => {
       button.addEventListener("click", (e) => {
         e.preventDefault();
 
         buttons.forEach((btn) => btn.classList.remove("active"));
         e.target.classList.add("active");
-
-        const defaultBtn = document.querySelector(".time-filters a.active");
-        if (defaultBtn) {
-          const defaultFilter = defaultBtn.textContent.trim().toLowerCase();
-          updateUI(data, defaultFilter);
-        }
 
         const filter = e.target.textContent.toLowerCase();
         updateUI(data, filter);
