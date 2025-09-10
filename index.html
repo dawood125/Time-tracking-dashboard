@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="time_tracking_dashboard">
+      <div class="dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 profile-card">
+              <div class="profile-info p-md-4">
+                <div class="info">
+                 <div>
+                   <img
+                  src="./images/image-jeremy.png"
+                  class="img-fluid rounded-circle user_img"
+                  alt="Jermey-image"
+                />
+                 </div>
+                <div>
+                  <h2 class="title">Report for</h2>
+                <h1 class="name_tit">Jeremy Robson</h1>
+                </div>
+                </div>
+              </div>
+              <div class="time-filters d-flex flex-md-column gap-3 p-md-4">
+                <a
+                  href="#"
+                  class="filter-btn text-decoration-none text-secondary fw-normal"
+                  >Daily</a
+                >
+                <a
+                  href="#"
+                  class="filter-btn text-decoration-none text-secondary  fw-normal active"
+                  >Weekly</a
+                >
+                <a
+                  href="#"
+                  class="filter-btn text-decoration-none text-secondary fw-normal"
+                  >Monthly</a
+                >
+              </div>
+            </div>
+            <div class="col-md-9 py-4 py-md-0">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="activity-card position-relative rounded-3" id="work">
+                    <div class="activity-icon pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3">
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Work</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">5hrs</p>
+                      <p class="previous-hours">Last Week - 7hrs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="activity-card position-relative card-2 rounded-3" id="play">
+                    <div class="activity-icon icon-2 pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3">
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Play</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">1hr</p>
+                      <p class="previous-hours"> Previous - 2hrs </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="activity-card card-3 position-relative rounded-3" id="study">
+                    <div class="activity-icon icon-3 pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3">
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Study</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">0hrs</p>
+                      <p class="previous-hours">Previous - 1hr</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="activity-card card-4 position-relative rounded-3" id="exercise">
+                    <div class="activity-icon icon-4 pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3">
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Exercise</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">1hr</p>
+                      <p class="previous-hours">Previous - 1hr</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="activity-card card-5 position-relative rounded-3" id="social">
+                    <div class="activity-icon icon-5 pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3">
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Social</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">1hr</p>
+                      <p class="previous-hours">Previous - 3hrs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="activity-card card-6 position-relative rounded-3" id="self_care">
+                    <div class="activity-icon icon-6 pe-3 pt-2"></div>
+                    <div class="activity-content rounded-3" >
+                      <div class="activity_tit_svg">
+                        <h3 class="activity-title">Self Care</h3>
+                        <img
+                          src="./images/icon-ellipsis.svg"
+                          class="img-fluid ellipsis"
+                          alt="ellipsis"
+                        />
+                      </div>
+                      <p class="current-hours fs-2 fw-light">0hrs</p>
+                      <p class="previous-hours">Previous - 1hr</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
